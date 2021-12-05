@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/gyrosenser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="자이로센서"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/textX"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="자이로센서"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/textY"
+            app:layout_constraintTop_toBottomOf="@+id/gyrosenser" />
+
+        <TextView
+            android:id="@+id/textY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="자이로센서"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/textZ"
+            app:layout_constraintTop_toBottomOf="@+id/textX" />
+
+        <TextView
+            android:id="@+id/textZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="자이로센서"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/textPitch"
+            app:layout_constraintTop_toBottomOf="@+id/textY" />
+
+        <TextView
+            android:id="@+id/textPitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="자이로센서"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/textRoll"
+            app:layout_constraintTop_toBottomOf="@+id/textZ" />
+
+        <TextView
+            android:id="@+id/textRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="자이로센서"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/textYaw"
+            app:layout_constraintTop_toBottomOf="@+id/textPitch" />
+
+        <TextView
+            android:id="@+id/textYaw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="자이로센서"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textRoll" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
